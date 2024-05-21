@@ -1,0 +1,60 @@
+/* base */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "맑은 고딕", sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+
+body {
+  width: 1000px;
+  height: 650px;
+}
+
+/* popup */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  border: #be0f00;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffff;
+  z-index: 6000;
+}
+.popup h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #be0f00;
+}
+.popup p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+.popup a {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+
+/* header */
+.header {
+  float: left;
+  width: 200px;
+  height: 650px;
+}
