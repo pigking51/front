@@ -1,4 +1,4 @@
-//popup
+// popup
 $(document).ready(function () {
   $(".popupOpen").click(function () {
     $(".popup").fadeIn(0);
@@ -9,31 +9,32 @@ $(document).ready(function () {
   });
 });
 
-//gnb
+// gnb
 $(document).ready(function () {
-  $(".gnb > ul > li").hover(
+  $(".gnb>ul>li").hover(
     function () {
-      $(this).find(".subnav").stop().slideDown("fast");
+      $(this).find(".subNav").stop().slideDown("fast");
     },
     function () {
-      $(this).find(".subnav").stop().slideUp("fast");
+      $(this).find(".subNav").stop().slideUp("fast");
     }
   );
 });
 
-/* main */
+// main
 $(document).ready(function () {
-  /* 보이지 사진을 의미하는 변수 */
+  // 보이지 사진을 의미하는 변수
   var num = 1; //처음 보이는 이미지번호
 
-  //3초마다 사진 슬라이드
+  // 3초마다 사진 슬라이드
   setInterval(function () {
     if (num < 3) {
-      //3번이미지가 아니라면
+      //3번 이미지가 아니라면
       num++; //1증가
       $(".main ul").animate(
         {
-          left: "-=1200", //왼쪽으로 -1200px만큼 이동
+          //   left: "-=1200", // 왼쪽으로 -1200px만큼 이동
+          top: "-=350",
         },
         "slow"
       );
@@ -42,7 +43,8 @@ $(document).ready(function () {
       num = 1; //1번으로 변경
       $(".main ul").animate(
         {
-          left: 0, //1번이미지가 보이는 처음 위치로 이동
+          //   left: 0, // 1번이미지가 보이는 처음 위치로 이동
+          top: 0,
         },
         "slow"
       );
